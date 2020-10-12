@@ -6,10 +6,19 @@
 int main(){
 	char *archivo1;
 	char *archivo2;
-	printf("Inserte nombre de archivo: \n");
-	// scanf(" %s", archivo1);
-	// leerArchivo(archivo1);
-	leerArchivo("archivo1.txt");
+
+	//---- El programa escoge el archivo ----//
+	/**/
+	archivo1 = "archivo1.txt";
+	archivo2 = "archivo2.txt";
+	//*/
+	//---- El usuario escoge el archivo ----//
+	/* //
+	printf("Inserte nombre de archivo principal: \n");
+	scanf(" %s", archivo1);
+	// */
+	leerArchivo(archivo1);
+
 	char menu_option = '0';
 
 	while(menu_option != '5'){
@@ -32,10 +41,14 @@ int main(){
 				printf("Number of characters: %d \n\n", getCharsTotal());
 				break;
 			case '3':
-				//backtrackingMaze(matrix);
+				deleteLinea(archivo1, 1);
 				break;
 			case '4':
-				//backtrackingMaze(matrix);
+				/* - //
+				printf("Inserte nombre de archivo a combinar: \n");
+				scanf(" %s", archivo2);
+				// - */
+				mergeArchivo(archivo1, archivo2);
 				break;
 			case '5': 
 				exit(1);

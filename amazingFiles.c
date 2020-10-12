@@ -34,7 +34,15 @@ void leerArchivo(char *file)
 		}
 
 	fclose(in_file);
-} 
+}
+
+void deleteLinea(char *file, int idLinea){
+	printf("Se ha borrado linea %d\n\n", idLinea);
+}
+
+void mergeArchivo(char *file1, char *file2){
+	printf("Se han combinado los archivos en archivo3.txt\n\n");
+}
 
 int getLinesTotal(){
 	return linesTotal;
