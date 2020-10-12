@@ -1,6 +1,6 @@
 void leerArchivo(char *file);
 void deleteLinea(char *file, int idLinea);
-void mergeArchivo(char *file1, char *file2);
+void mergeArchivo(char *fileFirst, char *fileSecond);
 int getLinesTotal();
 int getWordsTotal();
 int getCharsTotal();

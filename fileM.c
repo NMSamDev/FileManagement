@@ -6,7 +6,7 @@
 int main(){
 	char *archivo1;
 	char *archivo2;
-
+	int idDelete = 0;
 	//---- El programa escoge el archivo ----//
 	/**/
 	archivo1 = "archivo1.txt";
@@ -41,7 +41,9 @@ int main(){
 				printf("Number of characters: %d \n\n", getCharsTotal());
 				break;
 			case '3':
-				deleteLinea(archivo1, 1);
+				printf("Select line to delete: \n");
+				scanf("%d", &idDelete);
+				deleteLinea(archivo1, idDelete);
 				break;
 			case '4':
 				/* - //
